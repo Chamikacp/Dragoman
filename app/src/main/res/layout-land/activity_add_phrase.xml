@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    tools:context=".AddPhraseActivity">
+
+    <TextView
+        android:id="@+id/textView_addPhrases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="@string/add_phrases"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F4D03F"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_add"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="128dp"
+        android:autofillHints="Enter a single word or a single phrase"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter_a_single_word_or_a_single_phrase"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="#F4D03F"
+        android:textColorHint="#F4D03F"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_addPhrases" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/archivo_black"
+        android:onClick="addData"
+        android:text="@string/save"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
